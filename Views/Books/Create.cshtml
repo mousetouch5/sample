@@ -1,0 +1,8 @@
+@model Book
+<h2>@(Model?.Id > 0 ? "Edit Book" : "Add Book")</h2>
+<form method="post">
+    <p>Title: <input asp-for="Title" /></p>
+    <p>Author: <input asp-for="Author" /></p>
+    <p>Year: <input asp-for="Year" /></p>
+    <button type="submit">Save</button>
+</form>
